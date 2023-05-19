@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info Tentang</title>
+  	<link rel="stylesheet" type="text/css" href="sidebar.css">
+	<script src="script.js"></script>
+  <style>
+  /* Font Awesome CSS */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* Social Media Icons */
+
+.social-media a {
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 2rem;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-media a:hover {
+  color: #007bff;
+}
+
+.social-media a:nth-child(4):hover{
+  color: #833AB4;
+}
+
+.back{
+         text-align: center;
+       }
+       .back a{
+         color: black;
+         font-size: 20px;
+         font-family: 'Montserrat', sans-serif;
+         font-weight: bold;
+         text-decoration: none;
+       }
+       .back a:hover {
+  text-decoration: underline;
+}
+
+  
+  img.profile-pic {
+  width: 300px;
+	height: 300px; 
+	border-radius: 50%; 
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5); 
+	filter: grayscale(50%); 
+	transition: transform 0.5s ease;
+	animation: border-radius2 0.5s ease-in-out forwards;
+	} 
+	
+	img.profile-pic:hover { 
+	  transform: scale(1.1);
+	  animation: change-border-radius 0.5s ease-in-out forwards;
+	}
+
+@keyframes change-border-radius {
+  0% {
+    border-radius: 50%;
+  }
+  100% {
+    border-radius: 2.5%;
+  }
+}
+
+@keyframes border-radius2 {
+  0% {
+    border-radius: 2.5%;
+  }
+  100% {
+    border-radius: 50%;
+  }
+}
+
+    /* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+#header {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+#header h1 {
+  margin: 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+#main {
+  padding: 0.5rem;
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between;
+}
+
+.box {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  width: 90%;
+  transition: all 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+hr{
+  width: 80%;
+  margin-left: 20px;
+  border-color: white;
+}
+
+.box h2 {
+  font-size: 1.7rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+#contact {
+  width: 100%;
+  text-align: center;
+}
+
+#contact p {
+  margin-bottom: 0.5rem;
+}
+
+#contact a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+  transition: all 0.3s ease-in-out;
+}
+
+#contact a:hover {
+  color: #fff;
+  background-color: #333;
+  border-bottom: 1px solid #fff;
+}
+  
+/* Styling dasar untuk tombol */
+.tombol{
+  background-color: #dcdcdc; /* Warna latar belakang */
+  border: solid black 2px; /* Hapus border */
+  color: black; /* Warna teks */
+  padding: 12px 24px; /* Padding pada tombol */
+  text-align: center; /* Atur teks ke tengah */
+  text-decoration: none; /* Hapus underline */
+  display: inline-block; /* Agar tombol bisa diatur posisinya */
+  font-size: 16px; /* Ukuran teks */
+  margin: 4px 2px; /* Jarak antar tombol */
+  cursor: pointer; /* Ubah kursor saat hover */
+  border-radius: 20px; /* Agar tombol berbentuk melengkung */
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Saat tombol dihover */
+.tombol:hover {
+  background-color: #808080; /* Ubah warna latar belakang saat hover */
+}
+
+/* Saat tombol ditekan/clicked */
+.tombol:active {
+  background-color: #808080;/* Ubah warna latar belakang saat ditekan */
+  color: white;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.40); /* Tambahkan shadow */
+  transform: translateY(4px); /* Agar tombol terlihat menekan ke dalam */
+}
+
+details[open] summary {
+  font-weight: bold;
+}
+
+summary{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  transition: 0.3s;
+}
+
+.sidebar .projek a {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+  </style>
+</head>
+<body>
+  	<button id="openNav" onclick="openNav()"><i class="fa-solid fa-bars fa-xl"></i></button>
+
+	<div id="mySidebar" class="sidebar">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-circle-xmark"></i>
+	  </a>
+	  <a href="main.html">Home</a>
+	  <hr>
+	  <a href="biodata.html">Tentang saya</a>
+	  <hr>
+	  <a href="kontak-saya.html">Kontak saya</a>
+	  <hr>
+	</div>
+  <header id="header">
+    <h2>Rhadit Mika Rahil</h2>
+  </header>
+  <br>
+  <img src="https://media.discordapp.net/attachments/792652944368861197/1076413891334115349/IMG_20220617_205206_446.jpg" width="250px" style="display: block; margin: 0 auto;" class="profile-pic">
+  <br>
+  <div id="main">
+    <div class="box">
+      <h2>Biodata Pribadi</h2>
+      <p><b>Nama : </b> Rhadit Mika Rahil</p>
+      <p><b>Tanggal Lahir : </b> 24 Des 2007</p>
+      <p><b>Alamat : </b> Gempol Sari</p>
+      <p><b>Email : </b> rhdt.rhl@gmail.com</p>
+    </div>
+    <div class="box">
+      <h2>Pendidikan</h2>
+      <p><b>SMK : </b> SMK Negeri 1 Gantar</p>
+      <p><b>Jurusan : </b> Pengembangan Perangkat Lunak Dan Gim</p>
+      <p><b>Kelas : </b> 10</p>
+    </div>
+    <div class="social-media">
+            <h2>Social Media : </h2>
+  <a href="https://www.facebook.com/profile.php?id=100027111930521" target="_blank">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://twitter.com/LilDidyttt?t=pz-mxqePPav3vxRwFsKhFg&s=09" target="_blank">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="https://instagram.com/ligmanuts.json" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+</div>
+
+    <br>
+    <br>
+    <br>
+    <div id="contact">
+      <p>Hubungi Saya :</p>
+      <p><a href="mailto:rhdt.rhl@gmail.com">
+rhdt.rhl@gmail.com</a></p>
+    </div>
+  </div>
+</body>
+</body>
+</html>

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+body{
+  min-height: 100vh;
+  font-family: Inter;
+  background-color: #161616;
+}
+
+.container:hover .card{
+  transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.card{
+  width: 450px;
+  height: 450px;
+  gap: 30px;
+  max-width: 800px;
+  max-height: 800px;
+  margin: 0 auto;
+  background-color: #2E2929;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.4s;
+  transition: height 0.3s ease-in-out;
+}
+
+.container{
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 50px;
+}
+
+.card img{
+  width: 97%;
+  padding: 5px;
+  height: 327px;
+}
+
+ h1{
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 80px;
+}
+
+.card p{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.container h3{
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.container:hover .card:hover{
+  transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  box-shadow: 0px 4px 4px #DC5B51;
+  height: 1000px;
+}
+
+nav {
+  background-color: #333;
+  font-size: 30px;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+li a:hover {
+  background-color: #555;
+}
+
+@media (max-width: 600px) {
+.card{
+  width: 200px;
+  height: 200px;
+  }
+  .card img{
+  width: 190px;
+  padding: 5px;
+  height: 120px;
+  }
+  .card p{
+    font-size: 15px;
+    padding:  5px;
+  }
+  .container h3{
+    font-size: 20px;
+  }
+  .container:hover .card:hover{
+    height:  500px;
+  }
+  nav{
+    font-size: 15px;
+  }
+  footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+
+}
+
+.card:hover p{
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+/* style.css */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}
+
+.card h3:hover{
+  background-color: #555;
+  font-weight: bold;
+  color: brown;
+}

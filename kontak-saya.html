@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sidebar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+	<script src="../script.js"></script>
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+main {
+  margin: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+details[open] summary {
+  font-weight: 1500;
+}
+
+summary{
+  padding: 8px 8px 8px 32px;
+  font-weight: 1000;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  transition: 0.3s;
+}
+
+.sidebar .projek a {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+hr{
+  width: 80%;
+  margin-left: 20px;
+  border-color: white;
+}
+  </style>
+  <title>Kontak Saya</title>
+</head>
+<body>
+  <header>
+  <button id="openNav" onclick="openNav()"><i class="fa-solid fa-bars fa-xl"></i></button>
+
+	<div id="mySidebar" class="sidebar">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-circle-xmark"></i>
+	  </a>
+	  <a href="main.html">Home</a>
+	  <hr>
+	  <a href="biodata.html">Tentang saya</a>
+	  <hr>
+	  <a href="kontak-saya.html">Kontak saya</a>
+	  <hr>
+	</div>
+    <h1 align="center">Kontak Saya</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Informasi Kontak</h2>
+      <ul>
+        <li><i class="fa-solid fa-envelope fa-xl"></i> Email : <a href="mailto:rhdt.rhl@gmail.com">rhdt.rhl@gmail.com</a></li>
+        <li><i class="fa-brands fa-whatsapp fa-xl"></i> Telepon/WA : <a href="https://wa.me/6283156993997">083156993997</a></li>
+        <li><i class="fa-solid fa-location-dot fa-xl"></i> Alamat : <b>Blok Gempol Sari, Desa Situraja, Kec. Gantar, Kab.Indramayu</b></li>
+      </ul>
+    </section>
+    <h3><a href="biodata.html"><i class="fa-solid fa-circle-info"></i> <u>Info lengkap tentang saya</u></a></h3>
+  </main>
+  <footer>
+    <p align="center">Hak Cipta &copy; 2023 | Rhadit Mika Rahil</p>
+  </footer>
+</body>
+</html>
+
